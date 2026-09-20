@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hello-web · 张博凯</title>
+<style>
+  :root {
+    --bg: #0b0e14;
+    --fg: #e6edf3;
+    --dim: #7d8590;
+    --accent: #4dd0a7;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.7 -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .name {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    font-weight: 700;
+    margin: 0 0 .6em;
+    letter-spacing: .06em;
+  }
+  .line {
+    font-size: clamp(1rem, 3.4vw, 1.25rem);
+    color: var(--accent);
+    margin: 0 0 2.5em;
+  }
+  .ver {
+    display: inline-block;
+    font: 600 .8rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: .18em;
+    color: var(--dim);
+    border: 1px solid #21262d;
+    border-radius: 999px;
+    padding: .55em 1.1em;
+  }
+</style>
+</head>
+<body>
+  <main>
+    <p class="name">张博凯</p>
+    <p class="line">第八课第一次发布 —— 这行字是 v1，一会儿我要把它改掉重发一遍。</p>
+    <p class="ver">v1</p>
+  </main>
+</body>
+</html>
